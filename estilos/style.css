@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+*{
+
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+
+    background-color: #222832;
+}
+
+/* Começo do header */
+
+body > header{
+
+    display: flex;
+}
+
+body > header > h1{
+
+    color: #F0F4FB;
+    font-size: 35px;
+    font-weight: bold;
+
+    width: 100%;
+
+    margin: 20px 0px 0px 10vw;
+}
+
+body > header > nav{
+
+    display: flex;
+    width: 100%;
+
+    font-size: 13px;
+
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10vw;
+}
+
+body > header > nav > div{
+
+    color: #F0F4FB;
+    font-weight: bold;
+
+    padding-bottom: 1px;
+    margin: 21px 20px 0px 20px;
+}
+
+body > header > nav > div:hover{
+
+    transition: 0.5s;
+    margin-bottom: 2px;
+    border-bottom: 1px solid #00ff88;
+}
+
+/* Fim do header */
+/* Começo da section */
+
+body > section{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body > section > img{
+
+    width: 35vw;
+
+    margin: 20px 0px 0px 3vw;
+}
+
+body > section > div {
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 100px 5vw 0px 0px;
+}
+
+body > section > div > p{
+
+    color: #f0f4fb7a;
+
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+body > section > div > h1{
+
+    color: #F0F4FB;
+
+    font-size: 45px;
+    font-weight: bold;
+}
+
+body > section > div#animacao > div#imagens{
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+body > section > div#animacao > div#imagens > a > img{
+
+    width: 40px;
+    filter: brightness(60%);
+
+    margin: 0px 10px 0px 10px;
+}
+
+body > section > div#animacao > div#imagens > a > img:hover{
+
+    transition: 0.25s;
+    filter: brightness(100%);
+}
+
+/* Fim da Section */
+/* Começo do Article */
+
+body > div{
+
+    display: flex;
+    justify-content: space-around;
+
+    border-radius: 20px;
+
+    padding: 20px 40px 20px 40px;
+    margin: 50px 10vw 50px 10vw;
+}
+
+body > div > img{
+
+    filter: brightness(60%);
+}
+
+body > div > img#fix{
+
+    margin: 1px 0px 1px 0px;
+}
+
+
+body > div > img:hover{
+
+    filter: saturate(5000%) hue-rotate(324deg) brightness(1);
+    transform: scale(1.15);
+}
+
+/* Fim do Article */
+/* Começo do conteúdo principal */
+
+body > main{
+
+    background-color: #31363C;
+    
+    border-radius: 20px;
+    padding: 20px 40px 20px 40px;
+    margin: 0px 10vw 0px 10vw;
+}
+
+body > main > h2{
+
+    color: #F0F4FB;
+    font-size: 30px;
+}
+
+body > main > div.flex{
+
+    display: flex;
+    align-items: center;
+}
+
+body > main > div.flex > article.lado_esquerdo{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body > main > div.flex > article > h3{
+
+    color: #F0F4FB;
+    font-size: 20px;
+    text-align: right;
+
+    width: 100%;
+
+    margin: 20px 15px 15px 0px;
+}
+
+body > main > div.flex > article > p{
+
+    color: #F0F4FB;
+    font-size: 13px;
+
+
+    line-height: 25px;
+    width: 100%;
+    text-align: right;
+    
+    margin: 0px 15px 20px 0px;
+
+}
+
+body > main > div.flex > article > p > a{
+
+    text-decoration-line: underline;
+
+    padding-bottom: 5px;
+}
+
+body > main > div.flex > article > p > a:visited{
+
+    color: #F0F4FB;
+    text-decoration-line: underline;
+
+    padding-bottom: 5px;
+}
+
+body > main > div.flex > article > p > a:visited{
+
+    color: #F0F4FB;
+}
+
+body > main > div.flex > article > p > a:hover{
+
+    font-weight: bold;
+}
+
+body > main > div.flex > article > div.imagens {
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    width: 100%;
+
+    margin: 0px 15px 20px 0px;
+}
+
+body > main > div.flex > article > div.imagens > img{
+
+    filter: brightness(60%);
+}
+
+body > main > div.flex > article > div.imagens > img#css{
+
+    margin: 2px;
+}
+
+body > main > div.flex > aside > img{
+
+    width: 32vw;
+    height: 20vw;
+
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+body > main > div.flex > aside > img:hover{
+
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+body > main > div#direita{
+
+    flex-direction: row-reverse;
+}
+
+body > main > div#direita > article{
+
+    margin-left: 30px;
+}
+
+body > main > div#direita > article > h3{
+
+    text-align: left;
+}
+
+body > main > div#direita > article > p{
+
+    text-align: left;
+}
+
+body > main > div#direita > article > div.imagens{
+
+    flex-direction: row;
+    text-align: left;
+}
+
+body > main > div#direita > aside > img{
+
+    width: 36vw;
+    height: 23vw;
+}
+
+body > main > div > article > div.imagens > img#espaco{
+
+    margin-left: 5px;
+}
