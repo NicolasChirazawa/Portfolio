@@ -44,17 +44,19 @@ body > header > nav {
     margin-right: 10vw;
 }
 
-body > header > nav > div {
+body > header > nav > a {
 
     color: #F0F4FB;
     font-weight: bold;
     font-size: 18px;
 
+    text-decoration: none;
+
     padding-bottom: 1px;
     margin: 21px 20px 0px 20px;
 }
 
-body > header > nav > div:hover {
+body > header > a > div:hover {
 
     border-bottom: 2px solid #00ff88;
     margin-bottom: 2px;

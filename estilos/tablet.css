@@ -31,7 +31,7 @@
         flex-direction: column;
     }
 
-    body > header > nav > div{
+    body > header > nav > a{
 
         background-color: #31363C;
         width: 80%;
@@ -43,19 +43,21 @@
         margin: 0px;
     }
 
-    body > header > nav > div#primeiro_item{
+    body > header > nav > a#primeiro_item{
 
         border-radius: 20px 20px 0px 0px;
     }
 
-    body > header > nav > div#terceiro_item{
+    body > header > nav > a#terceiro_item{
 
         border-radius: 0px 0px 20px 20px;
     }
 
-    body > header > nav > div:hover {
+    body > header > nav > a:hover {
 
-        background-color: darkgray;
+        text-decoration: underline;
+
+        background-color: gray;
         margin-bottom: 0px;
         border-bottom: 0px;
     }
@@ -127,7 +129,7 @@
 
     body > footer > div > div > i{
 
-        font-size: 14px;
+        font-size: 14px !important;
     }
 
     body > footer > div > div > p{
