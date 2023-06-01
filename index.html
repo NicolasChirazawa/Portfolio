@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/tablet.css">
 
     <title>Portifólio</title>
 </head>
@@ -15,9 +17,9 @@
         <h1>Nicolas C. Fernandes</h1>
 
         <nav>
-            <div>Projetos</div>
+            <div id="primeiro_item">Projetos</div>
             <div>Habilidades</div>
-            <div>Contatos</div>
+            <div id="terceiro_item">Contatos</div>
         </nav>
 
     </header>
@@ -53,13 +55,42 @@
 
     </section>
 
-    <div>
+    <div class="habilidades">
 
-        <img title="HTML5" src="imagens/icones/icone-html.png" alt="ícone do HTML5">
-        <img id="fix" title="CSS3" src="imagens/icones/icone-css3.png" alt="ícone do CSS3">
-        <img title="Javascript" src="imagens/icones/icone-javascript.png" alt="ícone do Javascript">
-        <img title="Java" src="imagens/icones/icone-java.png" alt="ícone do Java">
-        <img title="MySQL" src="imagens/icones/icone-mysql.png" alt="ícone do MySQL">
+        <div class="centro">
+            <img src="imagens/icones/icone-html.png" alt="ícone do HTML5">
+            <p>HTML5</p>
+        </div>
+
+        <div class="centro">
+            <img src="imagens/icones/icone-css3.png" alt="ícone do CSS3">
+            <p>CSS3</p>
+        </div>
+
+        <div class="centro">
+            <img src="imagens/icones/icone-html.png" alt="ícone do Javascript">
+            <p>Javascript</p>
+        </div>
+
+    </div>
+
+
+    <div class="habilidades">
+
+        <div class="centro">
+            <img src="imagens/icones/icone-java.png" alt="ícone do Java">
+            <p>Java</p>
+        </div>
+
+        <div class="centro">
+            <img src="imagens/icones/icone-mysql.png" alt="ícone do MySQL">
+            <p>MySQL</p>
+        </div>
+
+        <div class="centro">
+            <img src="imagens/icones/icone-photoshop.png" alt="ícone do Photoshop">
+            <p>Photoshop</p>
+        </div>
 
     </div>
 
@@ -101,7 +132,7 @@
 
             <aside class="lado_direito">
 
-                <img src="imagens/site-app/scirelibros-site.png" alt="imagem do site ScireLibros">
+                <img src="imagens/site-app/scirelibros-original.png" alt="imagem do site ScireLibros">
 
             </aside>
 
@@ -139,7 +170,7 @@
 
             <aside class="lado_direito">
 
-                <img src="imagens/site-app/site-generico.png" alt="imagem do site ScireLibros">
+                <img src="imagens/site-app/site-generico-original.png" alt="imagem do site ScireLibros">
 
             </aside>
 
@@ -180,5 +211,25 @@
         </div>
 
     </main>
+
+    <footer>
+
+        <div>
+
+            <p>
+                Estou aberto a propostas de projetos. <br>
+                Pode entrar em contato pelo email.
+            </p>
+
+            <div>
+                <i class="material-icons">mail</i>
+                <p>nicolaschfernandes@gmail.com</p>
+            </div>
+
+        </div>
+
+        <p>© 2023 HTML e CSS feito por Nicolas Fernandes</p>
+
+    </footer>
 </body>
 </html>

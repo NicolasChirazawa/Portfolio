@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-*{
+* {
 
     padding: 0px;
     margin: 0px;
@@ -16,7 +16,7 @@ body{
 
 /* Começo do header */
 
-body > header{
+body > header {
 
     display: flex;
 }
@@ -32,7 +32,7 @@ body > header > h1{
     margin: 20px 0px 0px 10vw;
 }
 
-body > header > nav{
+body > header > nav {
 
     display: flex;
     width: 100%;
@@ -44,33 +44,33 @@ body > header > nav{
     margin-right: 10vw;
 }
 
-body > header > nav > div{
+body > header > nav > div {
 
     color: #F0F4FB;
     font-weight: bold;
+    font-size: 18px;
 
     padding-bottom: 1px;
     margin: 21px 20px 0px 20px;
 }
 
-body > header > nav > div:hover{
+body > header > nav > div:hover {
 
-    transition: 0.5s;
+    border-bottom: 2px solid #00ff88;
     margin-bottom: 2px;
-    border-bottom: 1px solid #00ff88;
 }
 
 /* Fim do header */
 /* Começo da section */
 
-body > section{
+body > section {
     
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-body > section > img{
+body > section > img {
 
     width: 35vw;
 
@@ -85,7 +85,7 @@ body > section > div {
     margin: 100px 5vw 0px 0px;
 }
 
-body > section > div > p{
+body > section > div > p {
 
     color: #f0f4fb7a;
 
@@ -93,7 +93,7 @@ body > section > div > p{
     font-size: 20px;
 }
 
-body > section > div > h1{
+body > section > div > h1 {
 
     color: #F0F4FB;
 
@@ -101,7 +101,7 @@ body > section > div > h1{
     font-weight: bold;
 }
 
-body > section > div#animacao > div#imagens{
+body > section > div#animacao > div#imagens {
 
     display: flex;
     justify-content: center;
@@ -109,7 +109,7 @@ body > section > div#animacao > div#imagens{
     margin-top: 20px;
 }
 
-body > section > div#animacao > div#imagens > a > img{
+body > section > div#animacao > div#imagens > a > img {
 
     width: 40px;
     filter: brightness(60%);
@@ -117,7 +117,7 @@ body > section > div#animacao > div#imagens > a > img{
     margin: 0px 10px 0px 10px;
 }
 
-body > section > div#animacao > div#imagens > a > img:hover{
+body > section > div#animacao > div#imagens > a > img:hover {
 
     transition: 0.25s;
     filter: brightness(100%);
@@ -126,29 +126,43 @@ body > section > div#animacao > div#imagens > a > img:hover{
 /* Fim da Section */
 /* Começo do Article */
 
-body > div{
+body > div.habilidades {
 
     display: flex;
     justify-content: space-around;
 
-    border-radius: 20px;
-
-    padding: 20px 40px 20px 40px;
     margin: 50px 10vw 50px 10vw;
 }
 
-body > div > img{
+body > div.habilidades > div.centro {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+body > div.habilidades > div.centro > img{
+
+    width: 4vw;
 
     filter: brightness(60%);
 }
 
-body > div > img#fix{
+body > div.habilidades > div.centro > p{
+
+    color: rgba(255, 255, 255, 0.600);
+    font-weight: bold;
+
+    margin-top: 3px;
+}
+
+body > div.habilidades > div.centro > img#fix {
 
     margin: 1px 0px 1px 0px;
 }
 
-
-body > div > img:hover{
+body > div.habilidades > div.centro > img:hover {
 
     filter: saturate(5000%) hue-rotate(324deg) brightness(1);
     transform: scale(1.15);
@@ -157,7 +171,7 @@ body > div > img:hover{
 /* Fim do Article */
 /* Começo do conteúdo principal */
 
-body > main{
+body > main {
 
     background-color: #31363C;
     
@@ -192,6 +206,9 @@ body > main > div.flex > article > h3{
 
     width: 100%;
 
+    padding-bottom: 1px;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to left, #00ff88, blue) 1;
     margin: 20px 15px 15px 0px;
 }
 
@@ -206,7 +223,6 @@ body > main > div.flex > article > p{
     text-align: right;
     
     margin: 0px 15px 20px 0px;
-
 }
 
 body > main > div.flex > article > p > a{
@@ -222,11 +238,6 @@ body > main > div.flex > article > p > a:visited{
     text-decoration-line: underline;
 
     padding-bottom: 5px;
-}
-
-body > main > div.flex > article > p > a:visited{
-
-    color: #F0F4FB;
 }
 
 body > main > div.flex > article > p > a:hover{
@@ -246,6 +257,7 @@ body > main > div.flex > article > div.imagens {
 
 body > main > div.flex > article > div.imagens > img{
 
+    width: 35px;
     filter: brightness(60%);
 }
 
@@ -257,7 +269,6 @@ body > main > div.flex > article > div.imagens > img#css{
 body > main > div.flex > aside > img{
 
     width: 32vw;
-    height: 20vw;
 
     border-radius: 10px;
     margin-left: 15px;
@@ -282,6 +293,7 @@ body > main > div#direita > article{
 body > main > div#direita > article > h3{
 
     text-align: left;
+    border-image: linear-gradient(to right, #00ff88, blue) 1;
 }
 
 body > main > div#direita > article > p{
@@ -297,11 +309,67 @@ body > main > div#direita > article > div.imagens{
 
 body > main > div#direita > aside > img{
 
-    width: 36vw;
-    height: 23vw;
+    width: 32vw;
 }
 
 body > main > div > article > div.imagens > img#espaco{
 
     margin-left: 5px;
+}
+
+body > footer{
+
+    background-color: black;
+
+    padding: 100px 0px 0px 0px;
+    margin-top: 50px;
+}
+
+body > footer > div{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 0px 10vw 0px 10vw;
+}
+
+body > footer > div > p{
+
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+body > footer > div > div{
+
+    display: flex;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+body > footer > div > div > i{
+
+    color: rgba(255, 255, 255, 0.400);
+    font-size: 1.5vw !important;
+
+    margin-right: 20px;
+}
+
+body > footer > div > div > p{
+
+    color: rgba(255, 255, 255, 0.400);
+    display: inline;
+    font-size: 1.5vw;
+}
+
+body > footer > p{
+
+    color: grey;
+    font-size: 12px;
+    text-align: center;
+
+    padding: 20px 0px 20px 0px;
+    margin-top: 30px;
 }

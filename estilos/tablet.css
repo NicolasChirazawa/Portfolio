@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/*
+
+------------------------------
+- Pequenas telas: Até 600px 
+- Celular: 600px - 768px
+- Tablet: 768px a 992px
+- Desktop: 992px a 1200px
+- TV: 1200px+
+
+*/
+
+@media screen and (max-width: 768px){
+    
+    body > header{
+
+        display: block;
+    }
+
+    body > header > h1{
+
+        display: block;
+        text-align: center;
+
+        margin: 10px auto 50px;
+    }
+
+    body > header > nav{
+
+        flex-direction: column;
+    }
+
+    body > header > nav > div{
+
+        background-color: #31363C;
+        width: 80%;
+
+        font-size: 20px;
+        text-align: center;
+
+        padding: 20px 0px;
+        margin: 0px;
+    }
+
+    body > header > nav > div#primeiro_item{
+
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    body > header > nav > div#terceiro_item{
+
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    body > header > nav > div:hover {
+
+        background-color: darkgray;
+        margin-bottom: 0px;
+        border-bottom: 0px;
+    }
+
+    body > section{
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body > section > img{
+
+        width: 50vw;
+    }
+
+    body > section > div{
+
+        margin: 30px 0px 30px 0px
+    }
+}
+
+@media screen and (max-width: 992px){
+
+
+    body > div.habilidades > div.centro > img{
+
+        width: 6vw;
+    }
+
+    body > main > div.flex > article > p{
+
+        color: rgba(255, 255, 255, 0.800);
+        font-size: 18px;
+    }
+
+    body > main > div.flex{
+
+        flex-direction: column;
+    }
+
+    body > main > div.flex > aside > img{
+
+        width: 60vw;
+        height: 32vw;
+    }
+
+    body > main > div#direita > aside > img{
+    
+        width: 60vw;
+        height: 32vw;
+    }
+
+    body > main > div#direita {
+
+        flex-direction: column;
+    }
+
+    body > footer > div{
+
+        flex-direction: column;
+    }
+
+    body > footer > div > p{
+
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    body > footer > div > div > i{
+
+        font-size: 14px;
+    }
+
+    body > footer > div > div > p{
+
+        font-size: 14px;
+    }
+}
