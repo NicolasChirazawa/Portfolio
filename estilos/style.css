@@ -56,7 +56,7 @@ body > header > nav > a {
     margin: 21px 20px 0px 20px;
 }
 
-body > header > a > div:hover {
+body > header > nav > a:hover {
 
     border-bottom: 2px solid #00ff88;
     margin-bottom: 2px;
@@ -274,6 +274,11 @@ body > main > div.flex > aside > img{
 
     border-radius: 10px;
     margin-left: 15px;
+}
+
+body > main > div.flex > aside#fix > img{
+
+    margin-left: 0px;
 }
 
 body > main > div.flex > aside > img:hover{

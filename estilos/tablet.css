@@ -68,6 +68,13 @@
         align-items: center;
     }
 
+    body > section > div#animacao > div#imagens > a > img{
+
+        width: 5vw;
+
+        margin: 0px 50px;
+    }
+
     body > section > img{
 
         width: 50vw;
