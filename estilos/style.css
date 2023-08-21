@@ -10,7 +10,7 @@
 }
 
 body{
-
+    
     background-color: #222832;
 }
 
@@ -128,15 +128,29 @@ body > section > div#animacao > div#imagens > a > img:hover {
 /* Fim da Section */
 /* Começo do Article */
 
-body > div.habilidades {
+body > div#borda {
+
+    background-color: #31363C;
+    border-radius: 20px;
+    padding: 20px 40px 20px 40px;
+    margin: 40px 10vw 40px 10vw;
+}
+
+body > div#borda > h2{
+
+    color: #F0F4FB;
+    font-size: 30px;
+}
+
+body > div#borda > div.habilidades {
 
     display: flex;
     justify-content: space-around;
 
-    margin: 50px 10vw 50px 10vw;
+    margin: 30px 10vw 30px 10vw;
 }
 
-body > div.habilidades > div.centro {
+body > div#borda > div.habilidades > div.centro {
 
     display: flex;
     align-items: center;
@@ -144,14 +158,14 @@ body > div.habilidades > div.centro {
 }
 
 
-body > div.habilidades > div.centro > img{
+body > div#borda > div.habilidades > div.centro > img{
 
     width: 4vw;
 
     filter: brightness(60%);
 }
 
-body > div.habilidades > div.centro > p{
+body > div#borda > div.habilidades > div.centro > p{
 
     color: rgba(255, 255, 255, 0.600);
     font-weight: bold;
@@ -159,15 +173,14 @@ body > div.habilidades > div.centro > p{
     margin-top: 3px;
 }
 
-body > div.habilidades > div.centro > img#fix {
+body > div#borda > div.habilidades > div.centro > img#fix {
 
     margin: 1px 0px 1px 0px;
 }
 
-body > div.habilidades > div.centro > img:hover {
+body > div#borda > div.habilidades > div.centro > img:hover {
 
-    filter: saturate(5000%) hue-rotate(324deg) brightness(1);
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
 /* Fim do Article */
@@ -229,17 +242,15 @@ body > main > div.flex > article > p{
 
 body > main > div.flex > article > p > a{
 
+    color: #F0F4FB;
     text-decoration-line: underline;
 
     padding-bottom: 5px;
 }
 
-body > main > div.flex > article > p > a:visited{
+body > main > div.flex > article > p > a:visited {
 
     color: #F0F4FB;
-    text-decoration-line: underline;
-
-    padding-bottom: 5px;
 }
 
 body > main > div.flex > article > p > a:hover{
@@ -261,11 +272,6 @@ body > main > div.flex > article > div.imagens > img{
 
     width: 35px;
     filter: brightness(60%);
-}
-
-body > main > div.flex > article > div.imagens > img#css{
-
-    margin: 2px;
 }
 
 body > main > div.flex > aside > img{
